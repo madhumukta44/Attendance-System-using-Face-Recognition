@@ -32,7 +32,7 @@ Make sure you have the following installed:
 1. Clone the repository:
 
     bash
-    git clone https://github.com/your-username/attendance-management-system.git
+    git clone https://github.com/madhumukta44/Attendance-System-using-Face-Recognition-.git
     cd attendance-management-system
     
 
