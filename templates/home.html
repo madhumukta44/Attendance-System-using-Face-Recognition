@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="{{ url_for('static',filename='css/home.css')}}" rel="stylesheet" />
+    <title>Homepage</title>
+  </head>
+  <body>
+    <button class="user-btn" onclick="dropDown()">
+      <img src="{{ url_for('static',filename='images/user.jpg')}}" alt="Error!" class="user" />
+    </button>
+    <div class="drop-wrap" id="menu">
+      <div class="drop">
+        <a href="#"
+          >My Account<span class="material-symbols-outlined"> person </span></a
+        >
+        <a href="#"
+          >Edit Profile<span class="material-symbols-outlined"> edit </span></a
+        >
+        <a href="#"
+          >Settings<span class="material-symbols-outlined icon">
+            settings
+          </span></a
+        >
+        <a href="#"
+          >Logout<span class="material-symbols-outlined icon"> logout </span></a
+        >
+      </div>
+    </div>
+    <div class="main">
+      <div class="container">
+        <img src="{{ url_for('static',filename='images/home_image.jpg')}}" alt="Error Loading!" />
+        <form name="section_form" action="/attendence/{{userid}}/take_attendence" method="get">
+          <div class="choice">
+            <select name="section">
+              <option selected>Select Section</option>
+              {% for section in sections %}
+              <option value="{{section}}">{{section}}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="btn-container">
+            <button>Take Attendance</button>
+            <button onclick="section_form.action='/attendance/{{userid}}/view_history'">View History</button>
+            <button onclick="section_form.action='/attendance/{{userid}}/Edit'">Edit Attendance</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      let menu = document.getElementById("menu");
+      function dropDown() {
+        menu.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>

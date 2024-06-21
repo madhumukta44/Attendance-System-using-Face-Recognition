@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="{{ url_for('static',filename='css/camera.css')}}" rel="stylesheet" />
+    <title>Take Attendance</title>
+  </head>
+  <body>
+    <button class="user-btn">
+      <img src="{{ url_for('static',filename='images/user.jpg')}}" alt="Error!" class="user" />
+    </button>
+    <div class="main">
+      <div class="container">
+        <img src="{{ url_for('static',filename='images/home_image.jpg')}}" alt="Error Loading!" />
+        <form name="Attendence" action="/attendence/{{userid}}/take_attendence/{{section}}/start_attendence" method="get">
+          <div class="btn-container">
+            <button type="submit">Start Attendance</button>
+            <button onclick="Attendence.action='/'">Show Attendance</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+{
+    "users": [
+        {
+            "firstname": "John",
+            "lastname": "Doe",
+            "userid": "2105001",
+            "password": "123jhon",
+            "sections": [
+                "section_1",
+                "section_3"
+            ]
+        },
+        {
+            "firstname": "Nobita",
+            "lastname": "Nobi",
+            "userid": "2105002",
+            "password": "123Nobita",
+            "sections": [
+                "section_1",
+                "section_2"
+            ]
+        },
+        {
+            "firstname": "Ankit",
+            "lastname": "Jha",
+            "userid": "2105003",
+            "password": "123jha",
+            "sections": [
+                "section_1",
+                "section_2",
+                "section_3"
+            ]
+        },
+        {
+            "firstname": "Amit",
+            "lastname": "Modi",
+            "userid": "2105004",
+            "password": "123Modi",
+            "sections": [
+                "section_1",
+                "section_3"
+            ]
+        },
+        {
+            "firstname": "madhu",
+            "lastname": "mukta",
+            "userid": "2105281",
+            "password": "momo",
+            "sections": [
+                "section_1",
+                "section_2",
+                "section_3",
+                "section_4"
+            ]
+        },
+        {
+            "firstname": "shivam",
+            "lastname": "satyarthi",
+            "userid": "2105000",
+            "password": "wowo"
+        }
+    ],
+    "login_details": {
+        "2105001": "123jhon",
+        "2105002": "123Nobita",
+        "2105003": "123jha",
+        "2105004": "123Modi",
+        "2105281": "momo",
+        "2105000": "wowo"
+    }
+}
